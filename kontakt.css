@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #080a1e;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+div {
+  padding: 0 30px;
+}
+
+a {
+  color: aliceblue;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #080a1e;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  padding: 0;
+  margin: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.navlinks a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  line-height: 2.5;
+}
+
+.navlinks a:hover,
+footer a:hover {
+  color: #f900bf;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center; /* Horisontellt centrera */
+  align-items: center; /* Vertikalt centrera */
+  flex-grow: 1; /* Gör så att det fyller hela tillgängliga höjd */
+  padding: 20px;
+}
+
+.contact-form {
+  background-color: #091828;
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 5px 20px #0a364a;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto; /* Centrera horisontellt */
+  transition: margin-left 0.3s ease;
+}
+
+.form-title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  color: #bdd7da;
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: aliceblue;
+  background-color: #2f8078;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #67cbc6;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 3px solid #bdd7da;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.form-input:focus {
+  border-color: #f900bf;
+  outline: none;
+  box-shadow: 0 0 5px #0a364a95;
+}
+
+footer p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+footer a,
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  list-style-type: none;
+  line-height: 1.7;
+  padding: 0;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #04293a;
+}
+
+@media (min-width: 777px) {
+  .contact-form {
+    margin-left: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-form {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 1064px) {
+  .contact-form {
+    margin-left: 33%;
+  }
+  .navlinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}

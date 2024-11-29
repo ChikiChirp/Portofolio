@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #080a1e;
+  color: aliceblue;
+  min-height: 100vh;
+}
+
+div {
+  padding: 0 30px;
+}
+
+a {
+  color: aliceblue;
+}
+
+a:hover {
+  color: #f900bf;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #080a1e;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  padding: 0;
+  margin: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: bolder;
+  color: aliceblue;
+}
+
+.navlinks a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  line-height: 2.5;
+}
+
+.intro h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+.intro article {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  line-height: 1.6;
+  margin: 2rem 0;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-div {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.project-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project {
+  width: 350px;
+  height: 300px;
+  text-align: center;
+  margin: 1rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #90e7ff77;
+}
+
+.project img {
+  max-width: 25%;
+  height: 30%;
+  margin-left: 35%;
+  margin-top: 20px;
+}
+
+.article-link {
+  text-decoration: none;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-link:hover {
+  transform: scale(1.06);
+  color: aliceblue;
+}
+
+footer p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+footer a,
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  list-style-type: none;
+  line-height: 1.7;
+  padding: 0;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #04293a;
+}
+
+@media (min-width: 1064px) {
+  .navlinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .intro article {
+    margin: 2rem 4rem;
+  }
+}
